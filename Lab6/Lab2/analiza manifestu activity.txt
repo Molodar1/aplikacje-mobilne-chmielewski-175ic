@@ -1,0 +1,19 @@
+package="pl.chmielewski.activity">  <-- Pakiet z projektem 
+
+    <application <-- informacje o aplikacji
+        android:allowBackup="true"   <--
+        android:icon="@mipmap/ic_launcher" <-- ikona aplikacji
+        android:label="@string/app_name" <-- nazwa aplikacji, wyświetlana u góry ekranu
+        android:roundIcon="@mipmap/ic_launcher_round" <-- ikona aplikacji
+        android:supportsRtl="true" <--Pozwolenie na wyświetlanie Right To Left layouts
+        android:theme="@style/AppTheme">  <-- motyw graficzny
+        <activity android:name=".Activity3"></activity>  }
+        <activity android:name=".Activity2" />           }<-- aktywności aplikacji 
+        <activity android:name=".MainActivity">          }
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> <-- określenie głównej aktywność aplikacji
+
+                <category android:name="android.intent.category.LAUNCHER" /> <--wywołuje główną aktywność aplikacji
+            </intent-filter>
+        </activity>
+    </application>
